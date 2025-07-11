@@ -1,0 +1,21 @@
+[2025-06-25 13:01:47,177] INFO [GroupCoordinator 0]: Preparing to rebalance group tweet-group in state PreparingRebalance with old generation 3 (__consumer_offsets-3) (reason: Removing member kafka-python-2.2.13-f0940103-ae71-41a6-903e-9d6aef91d290 on LeaveGroup; client reason: not provided) (kafka.coordinator.group.GroupCoordinator)
+[2025-06-25 13:01:47,186] INFO [GroupCoordinator 0]: Group tweet-group with generation 4 is now empty (__consumer_offsets-3) (kafka.coordinator.group.GroupCoordinator)
+[2025-06-25 13:01:47,188] INFO [GroupCoordinator 0]: Member MemberMetadata(memberId=kafka-python-2.2.13-f0940103-ae71-41a6-903e-9d6aef91d290, groupInstanceId=None, clientId=kafka-python-2.2.13, clientHost=/172.31.89.143, sessionTimeoutMs=10000, rebalanceTimeoutMs=300000, supportedProtocols=List(range, roundrobin)) has left group tweet-group through explicit `LeaveGroup`; client reason: not provided (kafka.coordinator.group.GroupCoordinator)
+[2025-06-25 13:20:03,415] WARN Client session timed out, have not heard from server in 12096ms for session id 0x100006f02bd0000 (org.apache.zookeeper.ClientCnxn)
+[2025-06-25 13:20:06,587] WARN Session 0x100006f02bd0000 for server localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 12096ms for session id 0x100006f02bd0000
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1257)
+[2025-06-25 13:20:16,444] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2025-06-25 13:20:21,216] INFO Socket connection established, initiating session, client: /127.0.0.1:52586, server: localhost/127.0.0.1:2181 (org.apache.zookeeper.ClientCnxn)
+[2025-06-25 13:20:44,554] WARN Session 0x100006f02bd0000 for server localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+EndOfStreamException: Unable to read additional data from server sessionid 0x100006f02bd0000, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1289)
+[2025-06-25 13:21:20,266] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2025-06-25 13:21:34,248] INFO Socket connection established, initiating session, client: /127.0.0.1:38884, server: localhost/127.0.0.1:2181 (org.apache.zookeeper.ClientCnxn)
+[2025-06-25 13:22:13,684] WARN Session 0x100006f02bd0000 for server localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+EndOfStreamException: Unable to read additional data from server sessionid 0x100006f02bd0000, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1289)
