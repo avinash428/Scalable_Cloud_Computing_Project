@@ -1,0 +1,52 @@
+
+[Auto-Scaler] Stream workload manager active...
+
+Active Workers: 1 | Avg CPU: 0.00%
+No scaling action needed.
+Active Workers: 1 | Avg CPU: 1.22%
+No scaling action needed.
+Active Workers: 1 | Avg CPU: 1.22%
+No scaling action needed.
+Active Workers: 1 | Avg CPU: 32.03%
+No scaling action needed.
+Active Workers: 1 | Avg CPU: 32.03%
+No scaling action needed.
+Active Workers: 1 | Avg CPU: 53.47%
+ High workload detected. Adding worker.
+Spawning a new worker instance...
+Worker instance i-0905f2906e730870a launched.
+Active Workers: 4 | Avg CPU: 64.09%
+No scaling action needed.
+Active Workers: 4 | Avg CPU: 21.37%
+No scaling action needed.
+Active Workers: 4 | Avg CPU: 16.02%
+No scaling action needed.
+Active Workers: 4 | Avg CPU: 18.98%
+No scaling action needed.
+Active Workers: 4 | Avg CPU: 1.36%
+ Low load detected. Removing one worker.
+Worker instance i-0905f2906e730870a terminated.
+Active Workers: 3 | Avg CPU: 32.83%
+No scaling action needed.
+Active Workers: 3 | Avg CPU: 32.83%
+No scaling action needed.
+Active Workers: 3 | Avg CPU: 32.93%
+No scaling action needed.
+Active Workers: 3 | Avg CPU: 31.50%
+No scaling action needed.
+Active Workers: 3 | Avg CPU: 31.47%
+No scaling action needed.
+Active Workers: 3 | Avg CPU: 23.92%
+No scaling action needed.
+Active Workers: 3 | Avg CPU: 23.92%
+No scaling action needed.
+Active Workers: 3 | Avg CPU: 23.91%
+No scaling action needed.
+Active Workers: 3 | Avg CPU: 19.37%
+No scaling action needed.
+Active Workers: 3 | Avg CPU: 1.28%
+ Low load detected. Removing one worker.
+Worker instance i-0ccb109402e3824a7 terminated.
+Active Workers: 2 | Avg CPU: 1.20%
+ Low load detected. Removing one worker.
+Worker instance i-06e007cde005557b0 terminated.

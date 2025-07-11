@@ -1,0 +1,53 @@
+-----> Kafka consumer connected.
+
+========== Starting workload: 200000 records ==========
+*** completed 200000 messages.
+----> Results saved to /home/ec2-user/environment/code/kafka_parallel/stream_output_parallel_200000.csv
+
+*** Stats for workload 200000:
+Top 5 words: [('i', 41786), ('the', 29995), ('to', 27112), ('a', 21606), ('you', 20673)]
+Sentiment distribution: Counter({'Positive': 114052, 'Neutral': 65519, 'Negative': 20429})
+Average Latency: 0.2560 s
+Average Throughput: 2277.78 tweets/sec
+Average CPU Usage: 56.04%
+Average Memory Usage: 51.86%
+Average Time/Message: 0.000256 s
+Total Processing Time: 73.65 s
+
+
+========== Starting workload: 300000 records ==========
+*** completed 300000 messages.
+----> Results saved to /home/ec2-user/environment/code/kafka_parallel/stream_output_parallel_300000.csv
+
+*** Stats for workload 300000:
+Top 5 words: [('i', 43517), ('the', 28235), ('to', 27123), ('a', 21393), ('you', 20820)]
+Sentiment distribution: Counter({'Positive': 169852, 'Neutral': 98405, 'Negative': 31743})
+Average Latency: 0.2484 s
+Average Throughput: 2408.25 tweets/sec
+Average CPU Usage: 53.12%
+Average Memory Usage: 54.48%
+Average Time/Message: 0.000248 s
+Total Processing Time: 107.19 s
+
+
+========== Starting workload: 500000 records ==========
+*** completed 500000 messages.
+----> Results saved to /home/ec2-user/environment/code/kafka_parallel/stream_output_parallel_500000.csv
+
+*** Stats for workload 500000:
+Top 5 words: [('i', 58687), ('to', 31684), ('the', 26629), ('my', 19223), ('a', 18604)]
+Sentiment distribution: Counter({'Neutral': 176637, 'Positive': 167085, 'Negative': 156278})
+Average Latency: 0.2564 s
+Average Throughput: 2390.79 tweets/sec
+Average CPU Usage: 53.15%
+Average Memory Usage: 56.55%
+Average Time/Message: 0.000256 s
+Total Processing Time: 184.32 s
+
+-----> Uploaded /home/ec2-user/environment/code/kafka_parallel/cpu_vs_workload.png to s3://scalable-cloud-x23389770/kafka_parallel_results/cpu_vs_workload.png
+-----> Uploaded /home/ec2-user/environment/code/kafka_parallel/latency_vs_workload.png to s3://scalable-cloud-x23389770/kafka_parallel_results/latency_vs_workload.png
+-----> Uploaded /home/ec2-user/environment/code/kafka_parallel/throughput_vs_workload.png to s3://scalable-cloud-x23389770/kafka_parallel_results/throughput_vs_workload.png
+-----> Uploaded /home/ec2-user/environment/code/kafka_parallel/memory_vs_workload.png to s3://scalable-cloud-x23389770/kafka_parallel_results/memory_vs_workload.png
+-----> Uploaded /home/ec2-user/environment/code/kafka_parallel/time_per_message_vs_workload.png to s3://scalable-cloud-x23389770/kafka_parallel_results/time_per_message_vs_workload.png
+
+-----> workloads processed, results saved, and combined performance graphs generated.
